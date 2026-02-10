@@ -1,0 +1,102 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: linear-gradient(135deg, #0f172a, #1e293b);
+}
+
+.red{
+    background-color: rgb(252, 42, 42);
+}
+
+.yellow{
+    background-color: rgb(255, 255, 86);
+}
+
+.green{
+    background-color: rgb(73, 255, 73);
+}
+
+.purple{
+    background-color: rgb(255, 54, 255);
+}
+
+.flash{
+    background-color: white;
+}
+
+.blue{
+    background-color: black;
+}
+
+.main-body{
+    background-color: white;
+    width: min(700px, 92vw);
+    min-height: 300px;
+    height: auto;
+    box-shadow: 30px 10px 30px rgba(255, 255, 255, 0.12);
+    border-radius: 5px;
+    padding: 20px;
+    text-align: center;
+}
+
+
+.main-body h1{
+    font-size: 32px;
+    font-weight: 700;
+    margin-bottom: 8px;
+}
+
+.main-body h2{
+    font-size: 18px;
+    font-weight: 500;
+    color: #444;
+    margin-bottom: 20px;
+    margin-top: 20px;
+}
+
+.btn-container{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 18px;
+    margin-bottom: 20px;
+}
+
+.line-one, .line-two{
+    display: flex;
+    gap: 18px;
+}
+
+.btn-container .btn{
+    height: 160px;
+    width: 160px;
+    border: 5px solid #111;
+    border-radius: 22px;
+    cursor: pointer;
+    transition: transform 0.12s ease, opacity 0.12s ease;
+}
+
+.btn-container .btn:active{
+    transform: scale(0.80);
+    opacity: 0.9;
+}
+
+
+#reset{
+    margin-top: 5px;
+}
+
+@media (max-width: 500px){
+    .btn-container .btn{
+        height: 120px;
+        width: 120px;
+    }
+}
